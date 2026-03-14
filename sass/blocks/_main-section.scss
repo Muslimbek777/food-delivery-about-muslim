@@ -1,0 +1,67 @@
+@use "./mixins" as m;
+.main-section {
+  padding-bottom: 12px;
+}
+.section-box {
+  @include m.flex-boxs(0);
+  width: 100%;
+}
+.section-boxs {
+  @include m.flex-boxs(10px);
+  padding-left: 30px;
+  padding-block: 15px;
+  background-color: #fc8a06;
+  width: 50%;
+  height: 72px;
+}
+.section-boxs:nth-child(2) {
+  @include m.flex-boxs(15px);
+  background-color: #028643;
+  width: 50%;
+}
+.section-boxs_img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.section-boxs_imgs {
+  width: 40px;
+  height: 40px;
+}
+.section-boxs_span {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.section-boxs_spans {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #fff;
+}
+.section-boxs_btn {
+  border: none;
+  background-color: transparent;
+  position: relative;
+}
+.num {
+  border-radius: 50%;
+  background-color: #ff0000;
+  color: #fff;
+  padding: 0px 2px;
+  width: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+@media only screen and (min-width: 834px) {
+}
+@media only screen and (min-width: 1280px) {
+  .main-section {
+    width: 1240px;
+    margin: 0 auto;
+  }
+}

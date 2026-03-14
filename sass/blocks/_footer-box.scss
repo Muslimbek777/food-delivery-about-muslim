@@ -1,0 +1,240 @@
+@use "./mixins" as m;
+.footer-box {
+  background-color: #e8e8e8;
+  padding-top: 50px;
+}
+.footer-boxs {
+  @include m.grid-box(60px);
+}
+.wrapper {
+  @include m.grid-box(0px);
+  text-align: center;
+  margin: 0;
+}
+.footer-card {
+  @include m.flex-boxs(2px);
+  border: 0.2px solid #ffffff;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+.footer-card_btn {
+  border: none;
+  border-radius: 5px;
+  width: 170px;
+  height: 40px;
+  background-color: #000;
+  padding-top: 5px;
+}
+.footer-card_btns {
+  border: none;
+  border-radius: 5px;
+  width: 170px;
+  height: 40px;
+  @include m.background(url("../images/playmarket.png"));
+}
+.imgs {
+  z-index: 0;
+  left: 10px;
+  opacity: 20%;
+  width: 295px;
+  position: absolute;
+  bottom: 0;
+}
+.wrapper-site_img {
+  width: 260px;
+}
+.wrapper-span {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 15px;
+}
+.bro-ul {
+  @include m.ul-box;
+  @include m.grid-box(40px);
+}
+.bro-ul_li__str {
+  font-weight: 700;
+  font-size: 18px;
+  color: #03081f;
+  text-align: start;
+  margin: 0;
+}
+.bro-ul_li:nth-child(1) {
+  @include m.grid-box(15px);
+}
+.registr {
+  @include m.flex-boxs(0px);
+  background-color: #d9d9d9;
+  width: 335px;
+  border-radius: 120px;
+  position: relative;
+}
+.register-int {
+  outline: none;
+  border: none;
+  background-color: #d9d9d9;
+  padding: 8px 25px;
+  color: #00000099;
+  &::placeholder {
+    columns: #00000099;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  height: 60px;
+  border-radius: 120px;
+  width: 180px;
+  font-weight: 400;
+  font-size: 14px;
+}
+.register-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  border-radius: 120px;
+  width: 160px;
+  height: 60px;
+  background-color: #fc8a06;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 17px 25px;
+  cursor: pointer;
+  &:hover {
+    background-color: #fff;
+    color: #fc8a06;
+  }
+}
+.bro-ul_li__text {
+  text-align: center;
+  font-weight: 400;
+  font-size: 13px;
+  color: #03081f;
+  margin: 0;
+}
+.bro-ul_li__text___span {
+  border-bottom: 1px solid #03081f;
+}
+.programs-ul {
+  @include m.ul-box;
+  @include m.flex-boxs(10px);
+  margin: 0 auto;
+}
+.programs-ul_li__btn {
+  border: none;
+  background-color: transparent;
+  width: 45px;
+  height: 45px;
+  @include m.background(url("../images/facebook.png"));
+  cursor: pointer;
+}
+.bts {
+  @include m.background(url("../images/instagramm.png"));
+}
+.btnss {
+  @include m.background(url("../images/tik tok.png"));
+}
+.btnsss {
+  @include m.background(url("../images/snapchat.png"));
+}
+.bro-ul_li:nth-child(2) {
+  @include m.grid-boxs(start, 10px);
+}
+.pages-ul {
+  @include m.ul-box;
+  @include m.grid-boxs(start, 10px);
+}
+.pages-ul_li__ite {
+  text-decoration-line: none;
+  font-weight: 400;
+  font-size: 15px;
+  color: #000;
+}
+.bro-ul_li:nth-child(3) {
+  @include m.grid-boxs(start, 10px);
+}
+.brat {
+  padding-block: 30px;
+  background-color: #03081f;
+  text-align: center;
+  margin-top: 50px;
+}
+.brat-box_text {
+  font-weight: 400;
+  font-size: 15px;
+  color: #fff;
+  margin: 0;
+}
+.brat-ul {
+  display: none;
+}
+@media only screen and (min-width: 834px) {
+  .wrapper {
+    margin: 0;
+  }
+  .bro-ul {
+    @include m.flex-box;
+  }
+  .brat-box {
+    @include m.flex-box;
+  }
+  .brat-ul {
+    display: block;
+    @include m.ul-box;
+    @include m.flex-boxs(10px);
+  }
+  .brat-ul_li__text {
+    color: #fff;
+    margin: 0;
+    font-weight: 400;
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .footer-boxs {
+    @include m.flex-box;
+  }
+  .wrapper {
+    width: 350px;
+    text-align: start;
+  }
+  .footer-card {
+    margin: 0;
+    width: 340px;
+    margin-top: 30px;
+  }
+  .bro-ul_li:nth-child(2) {
+    @include m.grid-box(20px);
+  }
+  .bro-ul_li:nth-child(3) {
+    @include m.grid-box(20px);
+  }
+  .pages-ul {
+    @include m.grid-box(20px);
+  }
+  .pages-ul_li__ite {
+    border-bottom: 1px solid #000;
+  }
+  .brat-ul {
+    @include m.flex-boxs(30px);
+  }
+  .bro-ul_li__text {
+    text-align: start;
+  }
+  .programs-ul {
+    margin: 0;
+  }
+  .registr {
+    width: 400px;
+    margin-top: 10px;
+  }
+  .register-int {
+    height: 50px;
+    width: 100%;
+  }
+  .register-btn {
+    height: 50px;
+    padding: 10px;
+  }
+}

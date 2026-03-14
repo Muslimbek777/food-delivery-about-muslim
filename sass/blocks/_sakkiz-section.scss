@@ -1,0 +1,76 @@
+@use "./mixins" as m;
+.sakkiz-section {
+  padding-block: 40px;
+}
+.ota-name {
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+.otas {
+  @include m.flex-boxs(20px);
+  overflow-x: scroll;
+}
+.ota-bola {
+  width: 120px;
+  @include m.grid-box(0);
+}
+.ota-bola_img {
+  width: 120px;
+  height: 103px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.ota-bola_span {
+  background-color: #fc8a06;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-inline: 10px;
+  width: 100%;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  text-align: center;
+}
+.spans {
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 31px;
+}
+@media only screen and (min-width: 834px) {
+  .ota-bola_img {
+    width: 160px;
+    height: 160px;
+  }
+  .ota-bola {
+    width: 160px;
+  }
+  .ota-bola_span {
+    padding: 0;
+    padding: 10px 5px;
+  }
+  .ota-name {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .otas {
+    @include m.flex-box-2(center);
+    overflow-x: hidden;
+  }
+  .ota-name {
+    font-size: 32px;
+    color: #000;
+  }
+  .ota-bola {
+    width: 190px;
+  }
+  .ota-bola_img {
+    width: 190px;
+    height: 160px;
+  }
+  .ota-bola_span {
+    font-weight: 700;
+    padding: 15px;
+  }
+}

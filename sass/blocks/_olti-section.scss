@@ -1,0 +1,64 @@
+@use "./mixins" as m;
+.olti-section {
+  padding-bottom: 60px;
+}
+.olti-box {
+  @include m.background(url("../images/map.png"));
+  object-fit: cover;
+  padding-block: 70px;
+  border-radius: 12px;
+}
+.olti-boxs {
+  background-color: #03081ff7;
+  padding-block: 50px;
+  padding-left: 25px;
+  border-radius: 12px;
+  @include m.grid-boxs(start, 30px);
+}
+.olti-boxs_name {
+  @include m.grid-boxs(start, 0px);
+  font-weight: 700;
+  font-size: 32px;
+  color: #fff;
+  margin: 0;
+}
+.olti-boxs_name__span {
+  font-weight: 700;
+  font-size: 22px;
+  color: #fc8a06;
+}
+.olti-boxs_text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 31px;
+  color: #fff;
+  margin: 0;
+}
+.olti-boxs_str {
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  @include m.grid-boxs(start, 10px);
+}
+.olti-boxs_str__span {
+  font-weight: 400;
+  font-size: 22px;
+  color: #fc8a06;
+}
+@media only screen and (min-width: 834px) {
+  .olti-box {
+    padding-left: 60px;
+  }
+  .olti-boxs {
+    width: 350px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .olti-box {
+    padding-left: 120px;
+  }
+  .olti-boxs {
+    width: 450px;
+    padding-left: 40px;
+  }
+}

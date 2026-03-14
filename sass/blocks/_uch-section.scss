@@ -1,0 +1,161 @@
+@use "./mixins" as m;
+.uch-section {
+  padding-block: 20px;
+}
+.uch-box {
+  @include m.grid-boxs(center, 0px);
+  text-align: center;
+}
+.uch-box_int {
+  border: none;
+  outline: none;
+  border: 1px solid #03081f;
+  border-radius: 120px;
+  width: 100%;
+  padding: 15px 50px;
+  height: 60px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #03081f;
+  margin-bottom: 30px;
+}
+.uch-box_str {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.uch-card {
+  @include m.flex-box;
+  padding: 10px 20px;
+  border: 1px solid #0000004d;
+  border-radius: 12px;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 5px 5px 34px 0px #00000040;
+    border: 1px solid #fc8a06;
+  }
+}
+.uch-card_img {
+  width: 50px;
+  height: 50px;
+}
+.uch-card_name {
+  font-weight: 600;
+  font-size: 32px;
+  margin: 0;
+}
+.uch-card_text {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+}
+.uch-card_btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 8px;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    @include m.background(url("../images/past.svg"));
+  }
+}
+.uch-cards {
+  @include m.flex-box;
+  padding-block: 10px;
+  padding-left: 10px;
+}
+.uch-cards_btn {
+  border: none;
+  background-color: #f6f6f6;
+  border-radius: 120px;
+  border: 1px solid #cfcfcf;
+  width: 200px;
+  height: 50px;
+  padding: 12px 25px;
+  font-weight: 400;
+  font-size: 16px;
+  @include m.flex-boxs(10px);
+  cursor: pointer;
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    @include m.background(url("../images/past.svg"));
+  }
+  &:hover {
+    box-shadow: 5px 5px 34px 0px #00000040;
+    border: 1px solid #fc8a06;
+  }
+}
+.modal-header {
+  border: none;
+}
+.modal-dialog {
+  width: 335px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.modal-title {
+  @include m.flex-boxs(10px);
+  font-weight: 600;
+  font-size: 32px;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    @include m.background(url("../images/menu.png"));
+  }
+}
+.menu-ul {
+  @include m.ul-box;
+  @include m.grid-box(25px);
+  text-align: start;
+}
+.menu-ul_li {
+  padding-left: 30px;
+}
+.menu-ul_li:nth-child(1) {
+  background-color: #03081f;
+  width: 335px;
+  padding-block: 10px;
+}
+.menu-ul_li__text {
+  margin: 0;
+  font-weight: 700;
+  font-size: 22px;
+}
+.texts {
+  color: #fff;
+  display: block;
+}
+@media only screen and (min-width: 834px) {
+  .uch-box_boxs {
+    width: 100%;
+    @include m.flex-boxs(130px);
+    flex-direction: row-reverse;
+  }
+  .uch-box_str {
+    margin: 0;
+    font-size: 22px;
+  }
+  .uch-box_int {
+    width: 300px;
+    margin: 0;
+  }
+  .uch-card {
+    display: none;
+  }
+  .uch-cards {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .uch-section {
+    padding-top: 40px;
+  }
+}

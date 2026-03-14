@@ -1,0 +1,101 @@
+@use "./mixins" as m;
+.yetti-section {
+  background-color: #d9d9d980;
+  padding-block: 50px;
+}
+.yetti-box {
+  @include m.grid-box(0px);
+  text-align: center;
+}
+.yetti-box_name {
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.yetti-box_img {
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.yetti-ul {
+  @include m.ul-box;
+  @include m.flex-boxs(20px);
+  overflow-x: scroll;
+}
+.yetti-ul_li {
+  padding: 30px 15px;
+  background-color: #fff;
+  border-radius: 4px;
+  width: 335px;
+}
+.li-boxs {
+  @include m.flex-boxs(10px);
+  margin-bottom: 20px;
+}
+.li-boxs_img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.li-boxs_str {
+  @include m.grid-box(0px);
+  font-weight: 600;
+  font-size: 18px;
+  text-align: start;
+  padding-left: 10px;
+  border-left: 2px solid #fc8a06;
+}
+.li-boxs_str__span {
+  font-weight: 400;
+  font-size: 16px;
+  color: #fc8a06;
+}
+.wrapper {
+  @include m.grid-box-2(center, end, 3px);
+  margin-left: 20px;
+}
+.wrapper-img {
+  margin-left: auto;
+}
+.wrapper-text {
+  font-weight: 400;
+  font-size: 11px;
+  margin: 0;
+}
+.li-boxs_text {
+  text-align: start;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  margin: 0;
+}
+@media only screen and (min-width: 834px) {
+  .yetti-section {
+    position: relative;
+  }
+  .yetti-box_img {
+    position: absolute;
+    bottom: -100px;
+    left: 330px;
+    margin: 0;
+  }
+  .yetti-ul {
+    overflow-x: hidden;
+  }
+  .yetti-ul_li {
+    width: 250px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .yetti-ul {
+    overflow-x: hidden;
+  }
+  .yetti-box_name {
+    margin-bottom: 30px;
+  }
+  .yetti-ul_li {
+    width: 400px;
+  }
+  .yetti-box_img {
+    left: 600px;
+  }
+}

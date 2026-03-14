@@ -1,0 +1,129 @@
+@use "./mixins" as m;
+.besh-section {
+  padding-block: 40px;
+}
+.besh-ul {
+  @include m.ul-box;
+  @include m.grid-box(30px);
+  box-shadow: 5px 5px 14px 0px #00000040;
+  padding: 50px 20px;
+  border-radius: 4px;
+}
+.besh-ul_li {
+  @include m.grid-boxs(start, 30px);
+}
+.besh-ul_li__str {
+  font-weight: 700;
+  font-size: 25px;
+  color: #03081f;
+  @include m.flex-boxs(10px);
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    @include m.background(url("../images/location.png"));
+  }
+}
+.li-box {
+  @include m.grid-boxs(start, 20px);
+}
+.li-box_box {
+  @include m.flex-boxs(10px);
+}
+.li-box_str {
+  font-weight: 700;
+  font-size: 16px;
+}
+.li-box_strs {
+  font-weight: 700;
+  font-size: 20px;
+}
+.strs {
+  font-weight: 700;
+  font-size: 17px;
+}
+.li-box_texts {
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0;
+}
+.besh-ul_li__strs {
+  font-weight: 700;
+  font-size: 20px;
+  color: #03081f;
+  @include m.flex-boxs(10px);
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    @include m.background(url("../images/contact.png"));
+  }
+}
+.li-box_text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 46px;
+  margin: 0;
+}
+.li-box_strss {
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0;
+}
+.li-box_span {
+  font-weight: 400;
+  font-size: 20px;
+}
+.besh-ul_li:nth-child(3) {
+  background-color: #03081f;
+  box-shadow: 5px 5px 14px 0px #00000040;
+  padding: 20px 30px;
+  border-radius: 4px;
+}
+.besh-ul_li__strss {
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+  margin: 0;
+  @include m.flex-boxs(10px);
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    @include m.background(url("../images/watch.png"));
+  }
+}
+.li-box_strss {
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  margin: 0;
+}
+.li-box_textss {
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  margin: 0;
+}
+@media only screen and (min-width: 834px) {
+  .besh-ul_li {
+    margin: 0;
+    width: 400px;
+    margin: 0 auto;
+  }
+  .besh-ul_li {
+    height: 454px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .besh-ul {
+    @include m.flex-box;
+  }
+  .besh-ul_li {
+    width: 360px;
+    margin: 0;
+  }
+}

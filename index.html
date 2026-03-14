@@ -1,0 +1,944 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>about</title>
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.3.8-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./styles/about.css" />
+  </head>
+  <body>
+    <header class="header-box">
+      <div class="container">
+        <div class="header-boxs">
+          <a href="./index.html">
+            <img
+              src="./images/logo.svg"
+              alt="logo"
+              class="header-box_logo logo"
+            />
+          </a>
+          <nav class="header-boxs_nav navbars" id="navbars">
+            <ul class="navbars-ul">
+              <li class="navbars-ul_li">
+                <a href="./index.html" class="navbars-ul_li__site">Home</a>
+              </li>
+              <li class="navbars-ul_li">
+                <a href="./index.html" class="navbars-ul_li__site"
+                  >Browse Menu
+                </a>
+              </li>
+              <li class="navbars-ul_li">
+                <a href="./index.html" class="navbars-ul_li__site">
+                  Special Offers
+                </a>
+              </li>
+              <li class="navbars-ul_li">
+                <a href="./index.html" class="navbars-ul_li__site">
+                  Restaurants
+                </a>
+              </li>
+              <li class="navbars-ul_li">
+                <a href="./index.html" class="navbars-ul_li__site">
+                  Track Order
+                </a>
+              </li>
+              <li class="navbars-ul_li">
+                <button
+                  type="button"
+                  class="header-boxs_btns header-btnss"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Login/Signup
+                </button>
+              </li>
+            </ul>
+          </nav>
+          <button
+            type="button"
+            class="header-boxs_btns header-btns"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Login/Signup
+          </button>
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-scrollable mt-5">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-titles fs-5" id="exampleModalLabel">
+                    Registr
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label"
+                        >Email address</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        aria-describedby="emailHelp"
+                      />
+                      <div id="emailHelp" class="form-text">
+                        We'll never share your email with anyone else.
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label"
+                        >Password</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="exampleInputPassword1"
+                      />
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="exampleCheck1"
+                      />
+                      <label class="form-check-label" for="exampleCheck1"
+                        >Check me out</label
+                      >
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                      Submit
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="header-box_btn header-btn" id="header-btn"></button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="main-section">
+        <div class="section-box">
+          <div class="section-box_box section-boxs">
+            <img src="./images/ayol.png" alt="ayol" class="section-boxs_img" />
+            <span class="section-boxs_span">Aycan</span>
+          </div>
+          <div class="section-box_box section-boxs">
+            <button
+              class="section-boxs_btn"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#pizza_menu"
+            >
+              <img
+                src="./images/musor.png"
+                alt="ayol"
+                class="section-boxs_imgs"
+              />
+              <span class="num">0</span>
+            </button>
+            <div
+              class="modal fade"
+              id="pizza_menu"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      Bascket
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-bodys">
+                    <div class="tort-box_box tort-card">
+                      <h3 class="tort-card_name">
+                        Farm House <br />
+                        Xtreme Pizza
+                      </h3>
+                      <img
+                        src="./images/qalampir.png"
+                        alt="qalampir"
+                        class="tort-card_img"
+                      />
+                      <p class="tort-card_text">
+                        1 McChicken™, 1 Big Mac™, 1 Royal Cheeseburger, 3 medium
+                        sized French Fries , 3 cold drinks
+                      </p>
+                      <div class="tort-card_box btnlar">
+                        <div class="tort-card_box small-box">
+                          Small
+                          <button class="tort-card_btns">£21.90</button>
+                        </div>
+                      </div>
+                      <img
+                        src="./images/position-2.png"
+                        alt="img"
+                        class="tort-card_imgs"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span class="section-boxs_spans">GBP 79.89</span>
+          </div>
+        </div>
+      </section>
+      <section class="ikki-section">
+        <div class="container">
+          <div class="main-box">
+            <p class="main-box_text">Lution Street, N4G-00....</p>
+          </div>
+          <div class="ikki-box">
+            <img
+              src="./images/ayol-kishi.png"
+              alt="ayol-kishi"
+              class="ikki-box_img"
+            />
+            <button class="ikki-box_btn">Open until 3:00 AM</button>
+            <div class="ikki-box_box ikki-card">
+              <p class="ikki-card_text">
+                Desi Flavours with a blend of Italian aesthetics!
+              </p>
+              <p class="ikki-card_text texts">I'm lovin' it!</p>
+              <h1 class="ikki-card_name">Tandoori Pizza London</h1>
+              <h1 class="ikki-card_name names">McDonald’s East London</h1>
+              <div class="ikki-card_box">
+                <button class="ikki-card_btn">Minimum Order: 12 GBP</button>
+                <button class="ikki-card_btns">
+                  Delivery in 20-25 Minutes
+                </button>
+              </div>
+              <img
+                src="./images/position.png"
+                alt="rasm"
+                class="ikki-card_img"
+              />
+            </div>
+            <img class="ikki-box_imgs" src="./images/set.png" alt="set" />
+          </div>
+        </div>
+      </section>
+      <section class="uch-section">
+        <div class="container">
+          <div class="uch-box">
+            <div class="uch-box_boxs">
+              <input
+                class="uch-box_int"
+                type="search"
+                placeholder="Search from menu..."
+              />
+              <strong class="uch-box_str"
+                >Order from Tandoori Pizza London</strong
+              >
+            </div>
+            <div class="uch-box_box uch-card">
+              <img src="./images/menu.png" alt="menu" class="uch-card_img" />
+              <h3 class="uch-card_name">Menu</h3>
+              <p class="uch-card_text">Pizzas</p>
+              <button
+                class="uch-card_btn"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#pizza_menu"
+              ></button>
+              <div
+                class="modal fade"
+                id="pizza_menu"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        Menu
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-bodys">
+                      <ul class="modal-body_ul menu-ul">
+                        <li class="menu-ul_li">
+                          <p class="menu-ul_li__text texts">Pizzas</p>
+                        </li>
+                        <li class="menu-ul_li">
+                          <p class="menu-ul_li__text">Garlic Bread</p>
+                        </li>
+                        <li class="menu-ul_li">
+                          <p class="menu-ul_li__text">Calzone</p>
+                        </li>
+                        <li class="menu-ul_li">
+                          <p class="menu-ul_li__text">Kebabas</p>
+                        </li>
+                        <li class="menu-ul_li">
+                          <p class="menu-ul_li__text">Salads</p>
+                        </li>
+                        <li class="menu-ul_li">
+                          <p class="menu-ul_li__text">Cold drinks</p>
+                        </li>
+                        <li class="menu-ul_li">
+                          <p class="menu-ul_li__text">Happy Meal®</p>
+                        </li>
+                        <li class="menu-ul_li">
+                          <p class="menu-ul_li__text">Desserts</p>
+                        </li>
+                        <li class="menu-ul_li">
+                          <p class="menu-ul_li__text">Hot drinks</p>
+                        </li>
+                        <li class="menu-ul_li">
+                          <p class="menu-ul_li__text">Sauces Orbit®</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="uch-box_box uch-cards">
+              <h3 class="uch-card_name">Pizzas</h3>
+              <button class="uch-cards_btn">Sort by Pricing</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tort-section">
+        <div class="container">
+          <div class="uch-box_card">
+            <ul class="modal-body_ul menu-ul">
+              <li class="menu-ul_li">
+                <button class="menu-ul_li__btn texts">Offers</button>
+              </li>
+              <li class="menu-ul_li">
+                <button class="menu-ul_li__btn">Burgers</button>
+              </li>
+              <li class="menu-ul_li">
+                <button class="menu-ul_li__btn">Fries</button>
+              </li>
+              <li class="menu-ul_li">
+                <button class="menu-ul_li__btn">Snocks</button>
+              </li>
+              <li class="menu-ul_li">
+                <button class="menu-ul_li__btn">Salads</button>
+              </li>
+              <li class="menu-ul_li">
+                <button class="menu-ul_li__btn">Cold drinks</button>
+              </li>
+              <li class="menu-ul_li">
+                <button class="menu-ul_li__btn">Happy Meal®</button>
+              </li>
+              <li class="menu-ul_li">
+                <button class="menu-ul_li__btn">Desserts</button>
+              </li>
+              <li class="menu-ul_li">
+                <button class="menu-ul_li__btn">Hot drinks</button>
+              </li>
+              <li class="menu-ul_li">
+                <button class="menu-ul_li__btn">Sauces</button>
+              </li>
+              <li class="menu-ul_li">
+                <button class="menu-ul_li__btn">Orbit®</button>
+              </li>
+            </ul>
+          </div>
+          <div class="tort-box">
+            <div class="fathers">
+              <div class="tort-box_box tort-card">
+                <h3 class="tort-card_name">
+                  Farm House <br />
+                  Xtreme Pizza
+                </h3>
+                <img
+                  src="./images/qalampir.png"
+                  alt="qalampir"
+                  class="tort-card_img"
+                />
+                <p class="tort-card_text">
+                  1 McChicken™, 1 Big Mac™, 1 Royal Cheeseburger, 3 medium sized
+                  French Fries , 3 cold drinks
+                </p>
+                <div class="tort-card_box btnlar">
+                  <div class="tort-card_box small-box">
+                    Small
+                    <button class="tort-card_btns">£21.90</button>
+                  </div>
+                  <div class="tort-card_box medium-box">
+                    Medium
+                    <button class="tort-card_btns">£25.90</button>
+                  </div>
+                  <div class="tort-card_box large-box">
+                    Large
+                    <button class="tort-card_btns">£27.90</button>
+                  </div>
+                  <div class="tort-card_box xl-box">
+                    XL Large with Sauces
+                    <button class="tort-card_btns">£32.90</button>
+                  </div>
+                </div>
+                <img
+                  src="./images/position-2.png"
+                  alt="img"
+                  class="tort-card_imgs"
+                />
+              </div>
+              <div class="tort-box_box tort-card">
+                <h3 class="tort-card_name">
+                  Farm House <br />
+                  Xtreme Pizza
+                </h3>
+                <img
+                  src="./images/qalampir.png"
+                  alt="qalampir"
+                  class="tort-card_img"
+                />
+                <p class="tort-card_text">
+                  1 McChicken™, 1 Big Mac™, 1 Royal Cheeseburger, 3 medium sized
+                  French Fries , 3 cold drinks
+                </p>
+                <div class="tort-card_box btnlar">
+                  <div class="tort-card_box small-box">
+                    Small
+                    <button class="tort-card_btns">£21.90</button>
+                  </div>
+                  <div class="tort-card_box medium-box">
+                    Medium
+                    <button class="tort-card_btns">£25.90</button>
+                  </div>
+                  <div class="tort-card_box large-box">
+                    Large
+                    <button class="tort-card_btns">£27.90</button>
+                  </div>
+                  <div class="tort-card_box xl-box">
+                    XL Large with Sauces
+                    <button class="tort-card_btns">£32.90</button>
+                  </div>
+                </div>
+                <img
+                  src="./images/position-2.png"
+                  alt="img"
+                  class="tort-card_imgs"
+                />
+                <img
+                  src="./images/yurak.png"
+                  alt="yurak"
+                  class="tort-card_imgss"
+                />
+              </div>
+              <div class="tort-box_box tort-card">
+                <h3 class="tort-card_name">
+                  Farm House <br />
+                  Xtreme Pizza
+                </h3>
+                <img
+                  src="./images/qalampir.png"
+                  alt="qalampir"
+                  class="tort-card_img"
+                />
+                <p class="tort-card_text">
+                  1 McChicken™, 1 Big Mac™, 1 Royal Cheeseburger, 3 medium sized
+                  French Fries , 3 cold drinks
+                </p>
+                <div class="tort-card_box btnlar">
+                  <div class="tort-card_box small-box">
+                    Small
+                    <button class="tort-card_btns">£21.90</button>
+                  </div>
+                  <div class="tort-card_box medium-box">
+                    Medium
+                    <button class="tort-card_btns">£25.90</button>
+                  </div>
+                  <div class="tort-card_box large-box">
+                    Large
+                    <button class="tort-card_btns">£27.90</button>
+                  </div>
+                  <div class="tort-card_box xl-box">
+                    XL Large with Sauces
+                    <button class="tort-card_btns">£32.90</button>
+                  </div>
+                </div>
+                <img
+                  src="./images/position-2.png"
+                  alt="img"
+                  class="tort-card_imgs"
+                />
+                <img
+                  src="./images/yurak.png"
+                  alt="yurak"
+                  class="tort-card_imgss"
+                />
+              </div>
+            </div>
+            <div class="father">
+              <div class="tort-wrap">
+                <span class="tort-wrap_span">-20%</span>
+                <div class="tort-wrap_box">
+                  <span class="tort-wrap_spans">Special Offer</span>
+                  <h4 class="tort-wrap_name">First Order Discount</h4>
+                </div>
+                <button class="tort-wrap_btn">
+                  <img
+                    class="tort-wrap_btn__img"
+                    src="./images/plus.png"
+                    alt="plus"
+                  />
+                </button>
+              </div>
+              <div class="tort-wrap">
+                <span class="tort-wrap_span">-20%</span>
+                <div class="tort-wrap_box">
+                  <span class="tort-wrap_spans">McDonald’s East London</span>
+                  <h4 class="tort-wrap_name">Vegan Discount</h4>
+                </div>
+                <button class="tort-wrap_btn">
+                  <img
+                    class="tort-wrap_btn__img"
+                    src="./images/plus.png"
+                    alt="plus"
+                  />
+                </button>
+              </div>
+              <div class="tort-wrap">
+                <span class="tort-wrap_span">-20%</span>
+                <div class="tort-wrap_box">
+                  <span class="tort-wrap_spans">Special Offer</span>
+                  <h4 class="tort-wrap_name">First Order Discount</h4>
+                </div>
+                <button class="tort-wrap_btn">
+                  <img
+                    class="tort-wrap_btn__img"
+                    src="./images/plus.png"
+                    alt="plus"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="besh-section">
+        <div class="container">
+          <div class="besh-box">
+            <ul class="besh-box_ul besh-ul">
+              <li class="besh-ul_li">
+                <strong class="besh-ul_li__str">Delivery information</strong>
+                <div class="besh-ul_li__box li-box">
+                  <div class="li-box_box">
+                    <strong class="li-box_strs"> Monday: </strong>
+                    <p class="li-box_texts">
+                      12:00 AM–3:00 AM, 8:00 AM–3:00 AM
+                    </p>
+                  </div>
+                  <div class="li-box_box">
+                    <strong class="li-box_strs"> Tuesday: </strong>
+                    <p class="li-box_texts">8:00 AM–3:00 AM</p>
+                  </div>
+                  <div class="li-box_box">
+                    <strong class="li-box_strs"> Wednesday: </strong>
+                    <p class="li-box_texts">8:00 AM–3:00 AM</p>
+                  </div>
+                  <div class="li-box_box">
+                    <strong class="li-box_strs"> Thursday: </strong>
+                    <p class="li-box_texts">8:00 AM–3:00 AM</p>
+                  </div>
+                  <div class="li-box_box">
+                    <strong class="li-box_strs"> Friday: </strong>
+                    <p class="li-box_texts">8:00 AM–3:00 AM</p>
+                  </div>
+                  <div class="li-box_box">
+                    <strong class="li-box_strs"> Saturday: </strong>
+                    <p class="li-box_texts">8:00 AM–3:00 AM</p>
+                  </div>
+                  <div class="li-box_box">
+                    <strong class="li-box_strs"> Sunday: </strong>
+                    <p class="li-box_texts">8:00 AM–12:00 AM</p>
+                  </div>
+                  <div class="li-box_box">
+                    <strong class="li-box_strs strs"
+                      >Estimated time until delivery:
+                    </strong>
+                    <p class="li-box_texts">20 min</p>
+                  </div>
+                </div>
+              </li>
+              <li class="besh-ul_li">
+                <strong class="besh-ul_li__strs">Contact information</strong>
+                <div class="besh-ul_li__box li-box">
+                  <p class="li-box_text">
+                    If you have allergies or other dietary restrictions, please
+                    contact the restaurant. The restaurant will provide
+                    food-specific information upon request.
+                  </p>
+                  <strong class="li-box_strs">Phone number</strong>
+                  <span class="li-box_span">+934443-43</span>
+                  <strong class="li-box_strs">Website</strong>
+                  <span class="li-box_span">http://mcdonalds.uk/ </span>
+                </div>
+              </li>
+              <li class="besh-ul_li">
+                <strong class="besh-ul_li__strss">Operational Times</strong>
+                <div class="besh-ul_li__box li-box">
+                  <div class="li-box_box">
+                    <strong class="li-box_strss"> Monday: </strong>
+                    <p class="li-box_textss">8:00 AM–3:00 AM</p>
+                  </div>
+                  <div class="li-box_box">
+                    <strong class="li-box_strss"> Tuesday: </strong>
+                    <p class="li-box_textss">8:00 AM–3:00 AM</p>
+                  </div>
+                  <div class="li-box_box">
+                    <strong class="li-box_strss"> Wednesday: </strong>
+                    <p class="li-box_textss">8:00 AM–3:00 AM</p>
+                  </div>
+                  <div class="li-box_box">
+                    <strong class="li-box_strss"> Thursday: </strong>
+                    <p class="li-box_textss">8:00 AM–3:00 AM</p>
+                  </div>
+                  <div class="li-box_box">
+                    <strong class="li-box_strss"> Friday: </strong>
+                    <p class="li-box_textss">8:00 AM–3:00 AM</p>
+                  </div>
+                  <div class="li-box_box">
+                    <strong class="li-box_strss"> Saturday: </strong>
+                    <p class="li-box_textss">8:00 AM–3:00 AM</p>
+                  </div>
+                  <div class="li-box_box">
+                    <strong class="li-box_strss"> Sunday: </strong>
+                    <p class="li-box_textss">8:00 AM–12:00 AM</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="olti-section">
+        <div class="olti-box">
+          <div class="container">
+            <div class="olti-boxs">
+              <h3 class="olti-boxs_name">
+                McDonald’s
+                <span class="olti-boxs_name__span">South London</span>
+              </h3>
+              <p class="olti-boxs_text">
+                Tooley St, London Bridge, <br />
+                London SE1 2TF, <br />
+                United Kingdom
+              </p>
+              <strong class="olti-boxs_str"
+                >Phone number
+                <span class="olti-boxs_str__span">+934443-43</span>
+              </strong>
+              <strong class="olti-boxs_str"
+                >Website
+                <span class="olti-boxs_str__span">http://mcdonalds.uk/</span>
+              </strong>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="yetti-section">
+        <div class="container">
+          <div class="yetti-box">
+            <h3 class="yetti-box_name">Customer Reviews</h3>
+            <img
+              class="yetti-box_img"
+              src="./images/baholash.png"
+              alt="otziv"
+            />
+            <ul class="yetti-box_ul yetti-ul">
+              <li class="yetti-ul_li">
+                <div class="yetti-ul_li__box li-boxs">
+                  <img
+                    src="./images/women.png"
+                    alt="women"
+                    class="li-boxs_img"
+                  />
+                  <strong class="li-boxs_str">
+                    St Glx
+                    <span class="li-boxs_str__span">South London</span>
+                  </strong>
+                  <div class="li-boxs_box wrapper">
+                    <img
+                      src="./images/stars.png"
+                      alt="stars"
+                      class="wrapper-img"
+                    />
+                    <p class="wrapper-text">24th September, 2023</p>
+                  </div>
+                </div>
+                <p class="li-boxs_text">
+                  The positive aspect was undoubtedly the efficiency of the
+                  service. The queue moved quickly, the staff was friendly, and
+                  the food was up to the usual McDonald's standard – hot and
+                  satisfying.
+                </p>
+              </li>
+              <li class="yetti-ul_li">
+                <div class="yetti-ul_li__box li-boxs">
+                  <img
+                    src="./images/women.png"
+                    alt="women"
+                    class="li-boxs_img"
+                  />
+                  <strong class="li-boxs_str">
+                    St Glx
+                    <span class="li-boxs_str__span">South London</span>
+                  </strong>
+                  <div class="li-boxs_box wrapper">
+                    <img
+                      src="./images/stars.png"
+                      alt="stars"
+                      class="wrapper-img"
+                    />
+                    <p class="wrapper-text">24th September, 2023</p>
+                  </div>
+                </div>
+                <p class="li-boxs_text">
+                  The positive aspect was undoubtedly the efficiency of the
+                  service. The queue moved quickly, the staff was friendly, and
+                  the food was up to the usual McDonald's standard – hot and
+                  satisfying.
+                </p>
+              </li>
+              <li class="yetti-ul_li">
+                <div class="yetti-ul_li__box li-boxs">
+                  <img
+                    src="./images/women.png"
+                    alt="women"
+                    class="li-boxs_img"
+                  />
+                  <strong class="li-boxs_str">
+                    St Glx
+                    <span class="li-boxs_str__span">South London</span>
+                  </strong>
+                  <div class="li-boxs_box wrapper">
+                    <img
+                      src="./images/stars.png"
+                      alt="stars"
+                      class="wrapper-img"
+                    />
+                    <p class="wrapper-text">24th September, 2023</p>
+                  </div>
+                </div>
+                <p class="li-boxs_text">
+                  The positive aspect was undoubtedly the efficiency of the
+                  service. The queue moved quickly, the staff was friendly, and
+                  the food was up to the usual McDonald's standard – hot and
+                  satisfying.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="sakkiz-section">
+        <div class="container">
+          <h3 class="ota-name">Similar Restaurants</h3>
+          <div class="otas">
+            <div class="ota-bola">
+              <img
+                class="ota-bola_img"
+                src="./images/mcdonals.png"
+                alt="brends"
+              />
+              <p class="ota-bola_span">McDonald’s London</p>
+            </div>
+            <div class="ota-bola">
+              <img
+                class="ota-bola_img"
+                src="./images/papajohns.png"
+                alt="brends"
+              />
+              <p class="ota-bola_span spans">Papa Johns</p>
+            </div>
+            <div class="ota-bola">
+              <img class="ota-bola_img" src="./images/kfc.png" alt="brends" />
+              <p class="ota-bola_span">KFC West London</p>
+            </div>
+            <div class="ota-bola">
+              <img class="ota-bola_img" src="./images/texas.png" alt="brends" />
+              <p class="ota-bola_span">Texas Chicken</p>
+            </div>
+            <div class="ota-bola">
+              <img
+                class="ota-bola_img"
+                src="./images/burger-king.png"
+                alt="brends"
+              />
+              <p class="ota-bola_span spans">Burger King</p>
+            </div>
+            <div class="ota-bola">
+              <img
+                class="ota-bola_img"
+                src="./images/shaurma.png"
+                alt="brends"
+              />
+              <p class="ota-bola_span spans">Shaurma 1</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-box">
+      <div class="container">
+        <div class="footer-boxs">
+          <div class="foooetr-box_box wrapper">
+            <a class="wrapper-site" href="./index.html">
+              <img
+                class="wrapper-site_img"
+                src="./images/logo 2.svg"
+                alt="logo"
+              />
+            </a>
+            <div class="footer-boxs_box footer-card">
+              <button class="footer-card_btn">
+                <img src="./images/yozuvlar.png" alt="text" />
+              </button>
+              <button class="footer-card_btns"></button>
+            </div>
+            <span class="wrapper-span"
+              >Company # 490039-445, Registered with House of companies.</span
+            >
+          </div>
+          <div class="bro">
+            <ul class="bro-ul">
+              <li class="bro-ul_li">
+                <strong class="bro-ul_li__str"
+                  >Get Exclusive Deals in your Inbox</strong
+                >
+                <form class="bro-ul_li__box registr">
+                  <input
+                    type="email"
+                    class="register-int"
+                    placeholder="youremail@gmail.com"
+                  />
+                  <button class="register-btn">Subscribe</button>
+                </form>
+                <p class="bro-ul_li__text">
+                  we wont spam, read our
+                  <span class="bro-ul_li__text__span">email policy</span>
+                </p>
+                <ul class="bro-ul_li_ul programs-ul">
+                  <li class="programs-ul_li">
+                    <button class="programs-ul_li__btn"></button>
+                  </li>
+                  <li class="programs-ul_li">
+                    <button class="programs-ul_li__btn bts"></button>
+                  </li>
+                  <li class="programs-ul_li">
+                    <button class="programs-ul_li__btn btnss"></button>
+                  </li>
+                  <li class="programs-ul_li">
+                    <button class="programs-ul_li__btn btnsss"></button>
+                  </li>
+                </ul>
+              </li>
+              <li class="bro-ul_li">
+                <strong class="bro-ul_li__str">Legal Pages</strong>
+                <ul class="bro-ul_li__ul pages-ul">
+                  <li class="pages-ul_li">
+                    <a class="pages-ul_li__ite" href="./index.html"
+                      >Terms and conditions
+                    </a>
+                  </li>
+                  <li class="pages-ul_li">
+                    <a class="pages-ul_li__ite" href="./index.html">Privacy</a>
+                  </li>
+                  <li class="pages-ul_li">
+                    <a class="pages-ul_li__ite" href="./index.html">Cookies</a>
+                  </li>
+                  <li class="pages-ul_li">
+                    <a class="pages-ul_li__ite" href="./index.html"
+                      >Modern Slavery Statement</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="bro-ul_li">
+                <strong class="bro-ul_li__str">Important Links</strong>
+                <ul class="bro-ul_li__ul pages-ul">
+                  <li class="pages-ul_li">
+                    <a class="pages-ul_li__ite" href="./index.html">Get help</a>
+                  </li>
+                  <li class="pages-ul_li">
+                    <a class="pages-ul_li__ite" href="./index.html"
+                      >Add your restaurant</a
+                    >
+                  </li>
+                  <li class="pages-ul_li">
+                    <a class="pages-ul_li__ite" href="./index.html">
+                      Sign up to deliver</a
+                    >
+                  </li>
+                  <li class="pages-ul_li">
+                    <a class="pages-ul_li__ite" href="./index.html">
+                      Create a business account</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-boxs_box brat">
+        <div class="container">
+          <div class="brat-box">
+            <p class="brat-box_text">
+              Order.uk Copyright 2024, All Rights Reserved.
+            </p>
+            <ul class="brat-box_ul brat-ul">
+              <li class="brat-ul_li">
+                <p class="brat-ul_li__text">Privacy Policy</p>
+              </li>
+              <li class="brat-ul_li">
+                <p class="brat-ul_li__text">Terms</p>
+              </li>
+              <li class="brat-ul_li">
+                <p class="brat-ul_li__text">Pricing</p>
+              </li>
+              <li class="brat-ul_li">
+                <p class="brat-ul_li__text">
+                  Do not sell or share my personal information
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

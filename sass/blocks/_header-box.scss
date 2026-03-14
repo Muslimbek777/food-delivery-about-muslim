@@ -1,0 +1,144 @@
+@use "./mixins" as m;
+.header-box {
+  padding-block: 25px;
+  position: relative;
+}
+.header-boxs {
+  @include m.flex-box;
+}
+.navbar-ul {
+  @include m.ul-box;
+  @include m.grid-box(30px);
+}
+.header-btns {
+  display: none;
+}
+.header-btn {
+  border: none;
+  width: 60px;
+  height: 60px;
+  @include m.background(url("../images/btn-img.png"));
+  background-color: transparent;
+  cursor: pointer;
+}
+.close-btn {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5vxynGa5KTnVhw9ZAAv8GiaUd-di0IidSIw&s");
+}
+.navbars {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 100px;
+  padding-block: 20px;
+  transform: translateY(-350px);
+  transition: transform 0.6s linear;
+  z-index: 1;
+  background-color: #fff;
+}
+.open {
+  transform: translateY(0px);
+}
+.navbars-ul {
+  @include m.ul-box;
+  @include m.grid-box(10px);
+}
+.navbars-ul_li {
+  @include m.grid-box(0px);
+}
+.navbars-ul_li__site {
+  text-decoration-line: none;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+}
+.modal-bodys {
+  @include m.grid-box(0);
+}
+.modal-bodyss {
+  padding: 20px;
+  overflow-y: scroll;
+}
+.header-btnss {
+  display: none;
+  border: none;
+  background-color: #03081f;
+  color: #fff;
+  border-radius: 120px;
+  @include m.flex-boxs(10px);
+  padding: 9px;
+  font-weight: 500;
+  font-size: 15px;
+  transition: all 0.2s linear;
+  &:hover {
+    background-color: #fff;
+    color: #03081f;
+    border: 1px solid #03081f;
+  }
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    @include m.background(url("../images/human.png"));
+  }
+}
+.modal-titles {
+  font-weight: 700;
+  font-size: 32px;
+  color: #03081f;
+}
+@media only screen and (min-width: 834px) {
+  .header-btn {
+    display: none;
+  }
+  .navbars {
+    transform: translateY(0px);
+    position: static;
+    padding: 0;
+  }
+  .navbars-ul {
+    @include m.flex-boxs(12px);
+  }
+  .navbars-ul_li:nth-child(6) {
+    display: none;
+  }
+  .header-btns {
+    display: none;
+    border: none;
+    background-color: #03081f;
+    color: #fff;
+    border-radius: 120px;
+    @include m.flex-boxs(10px);
+    padding: 9px;
+    font-weight: 500;
+    font-size: 15px;
+    transition: all 0.2s linear;
+    &:hover {
+      background-color: #fff;
+      color: #03081f;
+      border: 1px solid #03081f;
+    }
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      @include m.background(url("../images/human.png"));
+    }
+  }
+  .modal-dialog {
+    width: 736px !important;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .header-boxs {
+    @include m.flex-box;
+  }
+  .navbars-ul {
+    @include m.flex-boxs(40px);
+  }
+  .navbars-ul_li__site {
+    font-weight: 500;
+    font-size: 18px;
+  }
+}

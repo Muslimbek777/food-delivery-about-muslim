@@ -1,0 +1,219 @@
+@use "./mixins" as m;
+.main-box {
+  @include m.flex-box-2(end);
+  margin-bottom: 12px;
+}
+.main-box_text {
+  @include m.flex-boxs(10px);
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    @include m.background(url("../images/location.svg"));
+  }
+}
+.ikki-box {
+  position: relative;
+  padding: 40px 20px;
+  background-color: #e2e2e2e5;
+  @include m.grid-box(0px);
+  border-radius: 12px;
+}
+.ikki-box_img {
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 90px;
+}
+.ikki-box_imgs {
+  display: none;
+}
+.ikki-box_btn {
+  position: absolute;
+  left: 0;
+  top: 210px;
+  border: none;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  background-color: #fc8a06;
+  color: #fff;
+  padding: 15px 50px;
+  width: 300px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 18px;
+  @include m.flex-boxs(10px);
+  cursor: pointer;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    @include m.background(url("../images/Clock.svg"));
+  }
+}
+.ikki-card {
+  @include m.grid-box(15px);
+  margin-top: 40px;
+  text-align: center;
+}
+.ikki-card_text {
+  font-weight: 400;
+  font-size: 13px;
+  color: #03081f;
+  margin: 0;
+}
+.ikki-card_name {
+  font-weight: 700;
+  font-size: 25px;
+  color: #03081f;
+  margin: 0;
+}
+.names {
+  display: none;
+}
+.texts {
+  display: none;
+}
+.ikki-card_btn {
+  border: none;
+  border-radius: 120px;
+  width: 100%;
+  height: 60px;
+  background-color: #03081f;
+  color: #fff;
+  padding: 14px 30px;
+  border: 1px solid #fff;
+  font-weight: 600;
+  font-size: 15px;
+  @include m.flex-boxs(10px);
+  cursor: pointer;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    @include m.background(url("../images/list.svg"));
+  }
+}
+.ikki-card_btns {
+  border: none;
+  border-radius: 120px;
+  background-color: #03081f;
+  color: #fff;
+  width: 100%;
+  height: 60px;
+  padding: 14px 30px;
+  border: 1px solid #fff;
+  font-weight: 600;
+  font-size: 15px;
+  @include m.flex-boxs(10px);
+  cursor: pointer;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    @include m.background(url("../images/moto.svg"));
+  }
+}
+.ikki-card_img {
+  object-fit: cover;
+  position: absolute;
+  width: 50px;
+  border-radius: 12px;
+  top: 124px;
+  left: 45px;
+}
+@media only screen and (min-width: 834px) {
+  .ikki-box {
+    background-color: #03081f;
+    @include m.flex-boxs(20px);
+    padding-top: 100px;
+    padding-bottom: 30px;
+  }
+  .ikki-box_img {
+    display: none;
+  }
+  .ikki-box_imgs {
+    display: block;
+    width: 300px;
+    height: 200px;
+    border-radius: 12px;
+  }
+  .ikki-card {
+    margin: 0;
+    text-align: start;
+  }
+  .ikki-card_text {
+    color: #fff;
+    display: none;
+  }
+  .ikki-card_name {
+    color: #fff;
+    display: none;
+  }
+  .names {
+    display: block;
+  }
+  .texts {
+    display: block;
+  }
+  .ikki-card_img {
+    width: 80px;
+    left: 450px;
+    top: 190px;
+  }
+  .ikki-card_box {
+    @include m.flex-boxs(10px);
+  }
+  .ikki-box_btn {
+    top: 300px;
+  }
+  .ikki-card_btn {
+    padding: 10px 20px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .ikki-box {
+    @include m.flex-box;
+    padding-top: 150px;
+    padding-inline: 40px;
+    padding-bottom: 50px;
+  }
+  .texts {
+    font-size: 20px;
+  }
+  .names {
+    font-size: 50px;
+  }
+  .ikki-box_btn {
+    width: 320px;
+    top: 355px;
+  }
+  .ikki-card_btn {
+    width: 300px;
+  }
+  .ikki-card_btns {
+    width: 300px;
+  }
+  .ikki-card_box {
+    @include m.flex-boxs(20px);
+  }
+  .ikki-box_imgs {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    right: 30px;
+    top: 40px;
+  }
+  .ikki-card_img {
+    width: 100px;
+    left: 680px;
+    top: 240px;
+    z-index: 2;
+  }
+}
